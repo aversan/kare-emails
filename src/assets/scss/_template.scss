@@ -1,0 +1,420 @@
+// body
+
+table.body {
+  min-width: 360px;
+}
+
+// price
+
+.price,
+.price-old {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.price {
+  font-size: 17px;
+}
+
+.price-old {
+  font-size: 13px;
+  text-decoration: line-through;
+  color: $gray-500;
+}
+
+// header
+
+.header-phone {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.header-logo {
+  height: 23px;
+  fill: $pink;
+}
+
+.header .columns {
+  height: 88px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .header .columns {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+}
+
+
+// menu
+
+.menu-wrapper .wrapper-inner {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.menu-wrapper .container {
+  background: $pink;
+}
+
+.menu-wrapper .columns {
+  padding-bottom: 0;
+}
+
+table.menu td.menu-item.float-center,
+table.menu th.menu-item.float-center {
+  text-align: left;
+}
+
+table.menu td.menu-item.first,
+table.menu th.menu-item.first {
+  padding-left: $global-gutter;
+}
+
+table.menu td.menu-item.last,
+table.menu th.menu-item.last {
+  padding-right: $global-gutter;
+}
+
+table.menu td.menu-item a,
+table.menu th.menu-item a {
+  font-size: 13px;
+  line-height: 1.31;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .menu-wrapper .wrapper-inner {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  table.menu td.menu-item.first,
+  table.menu th.menu-item.first {
+    padding-left: 10px !important;
+  }
+
+  table.menu td.menu-item.last,
+  table.menu th.menu-item.last {
+    padding-right: 10px !important;
+  }
+}
+
+
+// content
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+	.wrapper.content > tbody > tr > td {
+	  padding-left: 20px !important;
+	  padding-right: 20px !important;
+	}	
+}
+
+// footer
+
+.footer-wrapper {
+  border-top: 1px solid $border-color;
+}
+
+.footer-wrapper .wrapper-inner {
+  padding-top: 26px;
+  padding-bottom: 32px;
+}
+
+.footer-wrapper .container {
+  background: $blue-light;
+}
+
+.footer-wrapper td.columns,
+.footer-wrapper td.column,
+.footer-wrapper th.columns,
+.footer-wrapper th.column {
+  padding-bottom: 0;
+}
+
+.footer-info {
+  font-size: 13px;
+  line-height: 1.54;
+  color: $gray-600;
+}
+
+.footer-logo {
+  height: 18px;
+}
+
+.footer-social-image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .footer-wrapper .wrapper-inner {
+    padding-top: 40px !important;
+  }
+}
+
+// cart-item
+
+.cart-item .wrapper-inner {
+  padding: 20px;
+  border: 1px solid $border-color;
+}
+
+.cart-item th.columns,
+.cart-item td.columns {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.cart-item td.cart-item-column-image,
+.cart-item th.cart-item-column-image {
+  width: 124px !important;
+  min-width: 124px;
+}
+
+.cart-item .cart-item-image {
+  width: 100px;
+  max-width: 100px;
+}
+
+.cart-item .cart-item-title {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  height: 52px;
+  overflow: hidden;
+}
+
+.cart-item .cart-item-price {
+  margin-right: 8px;
+}
+
+.cart-item .cart-item-count {
+  opacity: .5;
+}
+
+.cart-items {
+  padding-top: 1px;
+}
+
+.cart-items .cart-item {
+  margin-top: -1px;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .cart-item .wrapper-inner {
+    height: 100px !important;
+  }
+
+  .cart-item .cart-item-image {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .cart-item .cart-item-content,
+  table.body .cart-item .collapse .columns.cart-item-content,
+  table.body .cart-item .collapse .column.cart-item-content {
+    padding-left: 116px !important;
+  }
+
+  .cart-item .cart-item-title {
+    font-size: 15px !important;
+    line-height: 24px !important;
+    height: 48px !important;
+  }
+}
+
+  // buttons
+
+table.button.large table a {
+  text-transform: uppercase;
+}
+
+
+// callout
+
+table.callout {
+  margin-bottom: 0;
+}
+
+
+// cards
+.card .wrapper-inner {
+  padding: 20px 20px 16px;
+  height: 250px;
+  border: 1px solid $border-color;
+  position: relative;
+}
+
+.card .card-title {
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.card .card-description {
+  font-size: 13px;
+  line-height: 20px;
+  color: $medium-gray;
+}
+
+.card .card-footer,
+.card .card-price,
+.card .card-action {
+  line-height: 24px;
+}
+
+.card .card-price,
+.card .card-action {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card .card-price {
+  margin-right: 13px;
+}
+
+.card .card-action {
+  opacity: .5;
+}
+
+.card .price-old.card-price {
+  display: none;
+}
+
+.card .card-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: $pink;
+  color: $white;
+  display: none;
+}
+
+.card .card-label-sale-about-10 {
+  background: $blue-dark;
+}
+
+.card .card-label-sale-about-20 {
+  background: $brown;
+}
+
+.card-2h .wrapper-inner {
+  padding: 40px 32px 32px;
+  height: 513px;
+}
+
+.card-2h .card-title {
+  font-size:21px;
+  line-height: 31px;
+  height: 62px;
+}
+
+.card-2h .card-description {
+  height: 100px;
+  overflow: hidden;
+}
+
+.card-items {
+  padding-top: 1px;
+  padding-left: 1px;
+}
+
+.card-items .columns {
+  padding-bottom: 0;
+}
+
+.card-items .card {
+  margin-top: -1px;
+  margin-left: -1px;
+  width: calc(100% + 1px) !important;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .card .card-image {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+  }
+
+  .card .card-price.price-old {
+    display: inline !important;
+  }
+
+  .card .card-label {
+    display: block !important;
+  }
+
+  .card-2h .wrapper-inner {
+    height: auto !important;
+    padding: 24px 20px !important;
+  }
+
+  .card-2h .card-image {
+    width: 160px !important;
+    height: 160px !important;
+    max-width: 160px !important;
+  }
+
+  .card-2h .card-title {
+    font-size: 17px !important;
+    line-height: 26px !important;
+    height: 52px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .card-2h .card-description {
+    height: auto !important;
+  }
+
+  .card-cart-item-for-small .wrapper-inner {
+    height: 100px !important;
+    padding: 20px 20px 20px 136px !important;
+    position: relative !important;
+  }
+
+  .card-cart-item-for-small .card-image {
+    position: absolute !important;
+    left: 20px !important;
+    top: 20px !important;
+  }
+
+  .card-cart-item-for-small .cart-content,
+  table.body .card-cart-item-for-small .collapse .columns.cart-content,
+  table.body .card-cart-item-for-small .collapse .column.cart-content {
+    padding-left: 116px !important;
+  }
+
+  .card-cart-item-for-small .cart-title {
+    font-size: 15px !important;
+    line-height: 24px !important;
+    height: 48px !important;
+  }
+}
+
+// image-container
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .image-container {
+    margin-left: -$global-gutter !important;
+    margin-right: -$global-gutter !important;
+  }
+}
